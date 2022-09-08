@@ -6,7 +6,7 @@
   */
 int main(void)
 {
-	char text[] = "and the piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char text[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
 	fprintf(stderr, "%s\n", text);
 	return (1);
