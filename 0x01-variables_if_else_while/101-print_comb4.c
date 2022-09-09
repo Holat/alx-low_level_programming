@@ -20,7 +20,7 @@ int main(void)
 					putchar(b);
 					putchar(c);
 
-					if (a <= '6' && b <= '7')
+					if (a <= '6')
 					{
 						putchar(',');
 						putchar(' ');
