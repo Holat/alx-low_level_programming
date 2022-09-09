@@ -18,7 +18,7 @@ int main(void)
 		else if (alpha == 'e')
 		{
 			alpha++
-		else 
+		else
 		{
 			putchar(alpha)
 			alpha++
