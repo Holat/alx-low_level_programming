@@ -9,7 +9,21 @@ int main(void)
 	char alpha = 'a';
 
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
-		putchar(alpha);
+	{
+
+		if (alpha == 'q')
+		{
+			alpha++
+		}
+		else if (alpha == 'e')
+		{
+			alpha++
+		else 
+		{
+			putchar(alpha)
+			alpha++
+		}
+	}
 
 	putchar('\n');
 
