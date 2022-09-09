@@ -18,9 +18,10 @@ int main(void)
 		else if (alpha == 'e')
 		{
 			alpha++;
+		}
 		else
 		{
-			putchar(alpha)
+			putchar(alpha);
 			alpha++;
 		}
 	}
