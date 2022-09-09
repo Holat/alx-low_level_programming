@@ -13,15 +13,15 @@ int main(void)
 
 		if (alpha == 'q')
 		{
-			alpha++
+			alpha++;
 		}
 		else if (alpha == 'e')
 		{
-			alpha++
+			alpha++;
 		else
 		{
 			putchar(alpha)
-			alpha++
+			alpha++;
 		}
 	}
 
