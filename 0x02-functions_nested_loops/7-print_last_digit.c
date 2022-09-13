@@ -3,7 +3,7 @@
  * print_last_digit - prints last digit
  *
  * @num: parameter
- * @n: the last digit
+ *
  * Return: last digit
  */
 
@@ -17,6 +17,6 @@ int print_last_digit(int num)
 
 	n = num % 10;
 	_putchar(n + '0');
-	
+
 	return (n);
 }
