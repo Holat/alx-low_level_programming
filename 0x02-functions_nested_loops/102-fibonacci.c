@@ -10,7 +10,6 @@ int main(void)
 	long int n2 = 2;
 	long int n3, i;
 
-	printf("%ld, %ld", n1, n2);
 
 	for (i = 3; i <= 50; ++i)
 	{
