@@ -6,18 +6,18 @@
  */
 int main(void)
 {
-	int i;
+	int i, sum;
 
 	for (i = 0; i < 1024; i++)
 	{
 
 		if ((i % 3 == 0) || (i % 5 == 0))
 		{
-			i += i;
+			sum = sum + i;
 		}
 
 	}
 
-	printf("%d\n", i);
+	printf("%d\n", sum);
 	return (0);
 }
