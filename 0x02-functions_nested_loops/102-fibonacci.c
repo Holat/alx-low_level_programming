@@ -6,19 +6,19 @@
  */
 int main(void)
 {
-	int n1 = 1;
-	int n2 = 2;
-	int n3;
-	int i;
+	long int n1 = 1;
+	long int n2 = 2;
+	long int n3, i;
 
-	printf("%d, %d", n1, n2);
+	printf("%ld, %ld", n1, n2);
 
-	for (i = 5; i <= 50; ++i)
+	for (i = 1; i <= 50; ++i)
 	{
+
+		printf("%ld", n1);
+		printf(", ");
+
 		n3 = n1 + n2;
-		printf("%d", n3);
-		if (n3 != -811192543)
-			printf(", ");
 		n1 = n2;
 		n2 = n3;
 
