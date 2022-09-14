@@ -9,6 +9,8 @@ int main(void)
 	int i;
 	unsigned long int n1, n2, n3, sum;
 
+	n1 = 1;
+	n2 = 2;
 
 	for (i = 1; i <= 33; ++i)
 	{
