@@ -16,7 +16,9 @@ int main(void)
 	{
 
 		printf("%ld", n1);
-		printf(", ");
+		
+		if ( n1 != 20365011074)
+			printf(", ");
 
 		n3 = n1 + n2;
 		n1 = n2;
