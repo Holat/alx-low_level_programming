@@ -12,12 +12,12 @@ int main(void)
 
 	printf("%ld, %ld", n1, n2);
 
-	for (i = 1; i <= 50; ++i)
+	for (i = 3; i <= 50; ++i)
 	{
 
 		printf("%ld", n1);
-		
-		if ( n1 != 20365011074)
+
+		if (n1 != 20365011074)
 			printf(", ");
 
 		n3 = n1 + n2;
