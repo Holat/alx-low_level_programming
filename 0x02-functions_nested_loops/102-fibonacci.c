@@ -11,7 +11,7 @@ int main(void)
 	long int n3, i;
 
 
-	for (i = 3; i <= 50; ++i)
+	for (i = 1; i <= 50; ++i)
 	{
 
 		printf("%ld", n1);
