@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <string.h>
 #include "main.h"
 
@@ -15,7 +14,7 @@ char *_strcat(char *dest, char *src)
 	int src_len = strlen(src);
 	int dest_len = strlen(dest);
 	int len = src_len + dest_len + 1; /* 1 is for the null character*/
-	char *s = calloc(len, sizeof(char));
+	char *s;
 	int i = 0;
 
 	for (i = 0; i < dest_len; i++)
