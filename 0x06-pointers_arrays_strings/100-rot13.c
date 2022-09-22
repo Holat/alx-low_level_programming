@@ -27,7 +27,7 @@ char *rot13(char *s)
 			}
 		}
 
-		count++
+		count++;
 	}
 
 	return (s);
