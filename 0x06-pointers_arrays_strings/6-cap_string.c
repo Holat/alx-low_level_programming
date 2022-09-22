@@ -7,7 +7,7 @@
  * Return: capitalized sing
  */
 
-char *cap_sing(char *str)
+char *cap_string(char *str)
 {
 	int index = 0;
 
