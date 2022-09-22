@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * cap_sing - capitalizes sings
+ * cap_string - capitalizes sings
  * @str: the sing to be converted
  *
  * Return: capitalized sing
