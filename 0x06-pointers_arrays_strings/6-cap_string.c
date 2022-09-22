@@ -2,39 +2,37 @@
 
 /**
  * cap_sing - capitalizes sings
- * @s: the sing to be converted
+ * @str: the sing to be converted
  *
  * Return: capitalized sing
  */
 
-char *cap_sing(char *s)
+char *cap_sing(char *str)
 {
-	int i, c;
-	int j;
-	char sym[] = ",;.!?(){}\n\t\" ";
+	int index = 0;
 
-	for (i = 0, j = 0; s[i] != '\0'; i++)
+	while (str[index])
 	{
-		if (s[0] > 96 && s[0] < 123)
-			j = 1;
-		for (c = 0; sym[c] != '\0'; c++)
-		{
-			if (sym[c] == s[i])
-				j = 1;
-		}
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
 
-		if (j)
-		{
-			if (s[i] > 96 && s[i] < 123)
-			{
-				s[i] -= 32;
-				j = 0;
-			}
-			else if (s[i] > 64 && s[i] < 91)
-				j = 0;
-			else if (s[i] > 47 && s[i] < 58)
-				j = 0;
-		}
+		if (str[index - 1] == ' ' ||
+			str[index - 1] == '\t' ||
+			str[index - 1] == '\n' ||
+			str[index - 1] == ',' ||
+			str[index - 1] == ';' ||
+			str[index - 1] == '.' ||
+			str[index - 1] == '!' ||
+			str[index - 1] == '?' ||
+			str[index - 1] == '"' ||
+			str[index - 1] == '(' ||
+			str[index - 1] == ')' ||
+			str[index - 1] == '{' ||
+			str[index - 1] == '}' ||
+			index == 0)
+				str[index] -= 32;
+
+		index++;
 	}
-	return (s);
+	return (str);
 }
