@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * rot13 - encodes rot13
@@ -10,8 +9,7 @@
 
 char *rot13(char *s)
 {
-	int i;
-	int count = 0;
+	int count = 0, i;
 
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
