@@ -3,13 +3,14 @@
 /**
  * cap_sing - capitalizes sings
  * @s: the sing to be converted
- * 
+ *
  * Return: capitalized sing
  */
 
 char *cap_sing(char *s)
 {
-	int i, c, j;
+	int i, c;
+	int j;
 	char sym[] = ",;.!?(){}\n\t\" ";
 
 	for (i = 0, j = 0; s[i] != '\0'; i++)
