@@ -7,9 +7,10 @@
  *
  * Return: pointer to beginning of haystack
  */
+
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i, j;
+	unsigned int i = 0, j = 0;
 
 	while (haystack[i])
 	{
@@ -20,6 +21,7 @@ char *_strstr(char *haystack, char *needle)
 			else
 				break;
 		}
+
 		if (needle[j])
 		{
 			i++;
