@@ -7,6 +7,7 @@
  * Return: 1 if prime else 0
  */
 
+int prime(int n, int i);
 int is_prime_number(int n)
 {
 	int i = n / 2;
