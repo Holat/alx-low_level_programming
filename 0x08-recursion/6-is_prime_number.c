@@ -6,7 +6,9 @@
  *
  * Return: 1 if prime else 0
  */
-
+/**
+ * @i: number to start from
+ */
 int prime(int n, int i);
 int is_prime_number(int n)
 {
