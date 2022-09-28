@@ -4,7 +4,7 @@
  * wildcmp - compares two strings
  * @s1: string to check
  * @s2: pattern
- * 
+ *
  * Return: 1
  */
 
