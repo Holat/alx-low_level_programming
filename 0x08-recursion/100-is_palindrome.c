@@ -45,7 +45,7 @@ void check(char *s, int start, int end, int *flag)
  * Return: 1 if palindrome
  */
 
-int is_palindrome(char *s);
+int is_palindrome(char *s)
 {
 	int flag = 1;
 
