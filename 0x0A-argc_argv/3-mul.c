@@ -13,6 +13,7 @@ int main(int argc, char **argv)
 {
 	int n, ex;
 
+	ex = 0;
 	if (argc != 3)
 	{
 		printf("%s\n", "Error");
