@@ -29,5 +29,4 @@ char *_strdup(char *str)
 	}
 	s[len] = '\0';
 	return (s);
-	free(s);
 }
