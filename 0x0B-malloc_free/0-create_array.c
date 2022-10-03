@@ -21,8 +21,8 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 
-	if (*s == NULL)
-		return (1);
+	if (s == NULL)
+		return (NULL);
 
 	return (s);
 	free(s);
