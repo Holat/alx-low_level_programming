@@ -43,14 +43,17 @@ char **strtow(char *str)
 {
 	char **split;
 	int i = 0, j = 0, tmp = 0, s = 0, words = num_words(str);
+	int len;
 
 	if (words == 0)
 		return (NULL);
 
+	len = strlen(str);
+
 	split = (char **)malloc(sizeof(char *) * (words + 1));
 	if (split != NULL)
 	{
-		for (i = 0; i <= strlen(str) && words; i++)
+		for (i = 0; i <= len && words; i++)
 		{
 			if ((str[i] != ' ') && (str[i] != '\0'))
 			{
