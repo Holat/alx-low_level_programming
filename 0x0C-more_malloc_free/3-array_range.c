@@ -21,11 +21,11 @@ int *array_range(int min, int max)
 	if (arr == NULL)
 		return (NULL);
 
-	i = min;
-	while (i >= min && i <= max)
+	i = 0;
+	while (i <= (max - min))
 	{
-		arr[i] = i;
-		i++;
+		arr[i] = min;
+		i++, min++;
 	}
 
 	return (arr);
