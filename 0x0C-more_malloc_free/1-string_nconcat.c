@@ -23,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	i = strlen(s1);
 	j = strlen(s2);
-	
+
 	if (j > n)
 		j = n;
 
