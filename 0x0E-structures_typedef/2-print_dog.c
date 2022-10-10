@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * print_dog - prints info about the dog
@@ -17,10 +16,12 @@ void print_dog(struct dog *d)
 		printf("Name: (nil)\n");
 	else
 		printf("Name: %s\n", d->name);
-	if ((*d).age == NULL)
+
+	if ((*d).age < 0)
 		printf("Age: (nil)\n");
 	else
 		printf("Age: %d\n", d->age);
+
 	if ((*d).owner == NULL)
 		printf("Owner: (nil)\n");
 	else
