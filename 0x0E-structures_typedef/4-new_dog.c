@@ -7,6 +7,8 @@
  * @name: of the dog
  * @age: of the dog
  * @owner: of thr dog
+ *
+ * Return: pointer to a new dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
