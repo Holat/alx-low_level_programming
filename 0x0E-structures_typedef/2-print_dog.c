@@ -4,11 +4,12 @@
 /**
  * print_dog - prints info about the dog
  * @d: pointer to the dog struct
+ *
  */
 
 void print_dog(struct dog *d)
 {
-	if(d == NULL)
+	if (d == NULL)
 		printf("nil\n");
 	else
 	{
