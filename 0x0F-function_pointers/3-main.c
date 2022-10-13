@@ -30,7 +30,9 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	if ((o == "/" || o == "%") && (num2 == 0))
+	s = *argv[2];
+
+	if ((o == '/' || o == '%') && (num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
