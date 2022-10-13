@@ -7,7 +7,7 @@
  *
  * Return: the function
  */
-void *get_op_func(char *s)
+int  (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
@@ -19,12 +19,13 @@ void *get_op_func(char *s)
 	};
 	int i;
 
-	while (i < 6)
+	i = 0;
+
+	while (ops[i].op)
 	{
-		if (*s == ops[i][0])
-			return (ops[i][1]);
-		else
-			return (NULL);
+		if (strcmp(ops[i].op, s) == 0)
+			return (ops[i].f);
 		i++;
 	}
+	return (NULL);
 }
