@@ -9,7 +9,7 @@
  * Return: Always (0) success
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int num1, num2, result;
 	char s;
@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 
 	s = *argv[2];
 
-	if ((o == '/' || o == '%') && (num2 == 0))
+	if ((s == '/' || s == '%') && (num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
